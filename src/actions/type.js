@@ -1,1 +1,3 @@
 export const SELECT_FOOD = "SELECT_FOOD";
+export const GET_FEEDBACK = "GET_FEEDBACK";
+export const RECEIVED_FEEDBACK = "RECEIVE_FEEDBACK";

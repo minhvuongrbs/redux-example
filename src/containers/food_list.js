@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { selectFood} from '../actions'
+import { selectFood } from '../actions'
 
 class FoodList extends Component {
   createFoodList() {
@@ -32,8 +32,8 @@ const mapStateToProps = (state) => {
   };
 }
 
-const mapDispatchToProps = (dispatch) =>{
-  return bindActionCreators({selectFood: selectFood},dispatch)
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators({ selectFood: selectFood }, dispatch)
 }
 let FoodListContainer = connect(mapStateToProps, mapDispatchToProps)(FoodList);
 export default FoodListContainer;
